@@ -1,15 +1,11 @@
 import google.generativeai as genai
 import os
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By 
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import streamlit as st
 import json
-import string
+
 
 with open("data.json", "r", encoding="utf-8") as file:
     indexed_content = json.load(file)
@@ -52,7 +48,7 @@ def main():
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
-    if prompt := st.chat_input("Hỏi đi thằng lol:"):
+    if prompt := st.chat_input("Type your question:"):
         st.session_state.messages.append(
             {
                 "role": "user",
