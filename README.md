@@ -1,5 +1,4 @@
-# Final Assignment
-
+# Final Assignment - Python for DS
 
 ## 1. Giới thiệu
 
@@ -10,7 +9,7 @@
 |Trương Minh Hoàng|22280034|
 |Nguyễn Duy Huân|22280035|
 
-### Question 1: Tích hợp LLM
+### Question 1: LLM Integration
 #### Single Text Translation
 - **Mô tả nhiệm vụ**: 
   Viết mã Python sử dụng Gemini API để dịch một đoạn văn bản đầu vào sang tiếng Việt. Giữ nguyên nếu văn bản đã ở ngôn ngữ đích.
@@ -22,10 +21,10 @@
   Viết mã Python để dịch danh sách các đoạn văn bản đầu vào sang tiếng Việt. 
 - **Ví dụ**:
   - Đầu vào: `["Hello", "I am John", "Tôi là sinh viên"]`  
-    → Đầu ra: `["Xin chào", "Tôi tên là John", "Tôi là sinh viên"]`.
+  - Đầu ra: `["Xin chào", "Tôi tên là John", "Tôi là sinh viên"]`.
 
 
-### Question 2: Phát triển Chatbot 
+### Question 2: Chatbot Development 
 #### Data Access and Indexing 
 - **Mô tả nhiệm vụ**:
   - Thu thập dữ liệu từ trang web [https://www.presight.io/privacy-policy.html](https://www.presight.io/privacy-policy.html).
