@@ -6,6 +6,9 @@ import numpy as np
 import streamlit as st
 import json
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 class Chatbot():
@@ -34,6 +37,8 @@ class Chatbot():
                                                  Else answer the query, base on the following information: {content[most_similar_index]}.\
                                                  This is the query: {query}")
         return response
+    
+
 def prepare_chatbot():
         encoder = SentenceTransformer('all-MiniLM-L6-v2')
         model = genai.GenerativeModel("gemini-1.5-flash")
@@ -52,6 +57,7 @@ def main():
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
+
     if prompt := st.chat_input("Type your question:"):
         st.session_state.messages.append(
             {
@@ -61,7 +67,8 @@ def main():
         )
         with st.chat_message('user'):
             st.markdown(prompt)
-    #Tạo phản hồi cho mô hình
+        
+        # Tạo phản hồi cho mô hình
         chatbot = prepare_chatbot()
         response = chatbot.chat_bot(st.session_state.indexed_content, prompt)
         st.session_state.messages.append(
