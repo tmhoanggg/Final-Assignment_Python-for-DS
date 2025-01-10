@@ -7,9 +7,6 @@ import streamlit as st
 import json
 
 
-with open("data.json", "r", encoding="utf-8") as file:
-    indexed_content = json.load(file)
-
 class Chatbot():
     def __init__(self, encoder, model):
         self.__api_key = os.getenv("API_KEY")
@@ -44,6 +41,10 @@ def main():
     st.title("Presight's Privacy Policy Chatbot")
     if "messages" not in st.session_state:
         st.session_state.messages = []
+    
+    if 'indexed_content' not in st.session_state:
+        with open("data.json", "r", encoding="utf-8") as file:
+            st.session_state.indexed_content = json.load(file)
 
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
@@ -59,7 +60,7 @@ def main():
             st.markdown(prompt)
     #Tạo phản hồi cho mô hình
         chatbot = prepare_chatbot()
-        response = chatbot.chat_bot(indexed_content, prompt)
+        response = chatbot.chat_bot(st.session_state.indexed_content, prompt)
         st.session_state.messages.append(
             {
                 "role": "assistant",
