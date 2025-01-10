@@ -36,7 +36,7 @@
 | source.ipynb          | Notebook và mã nguồn cho question 1 và 2 |
 
 
-## 3. Hướng đẫn sử dụng
+## 3. Hướng dẫn sử dụng
 ### 3.1 Cài đặt môi trường
 - Cài đặt Python: Yêu cầu phiên bản Python >= 3.8.
 - Cài đặt các thư viện cần thiết: pip install -r requirements.txt
@@ -48,4 +48,4 @@
 - Có thể xem chi tiết quá trình scrawling và indexing 
 #### Deploy chatbot ở question 2
 - Chạy mã nguồn được lưu trong app.py bằng lệnh: streamlit run app.py
-- Hoặc truy câp vào link trực tuyến đã tạo được tag trong source.ipynb
+- Hoặc truy cập vào link trực tuyến đã tạo và được tag trong source.ipynb
