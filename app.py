@@ -41,7 +41,7 @@ def prepare_chatbot():
 
 
 def main():
-    st.title("Chatbot about Privacy Policy of Presight")
+    st.title("Presight's Privacy Policy Chatbot")
     if "messages" not in st.session_state:
         st.session_state.messages = []
 
