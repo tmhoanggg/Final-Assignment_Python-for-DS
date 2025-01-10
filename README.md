@@ -26,24 +26,23 @@
   - Phát triển chatbot sử dụng xử lý ngôn ngữ tự nhiên (NLP) để trả lời các câu hỏi của người dùng dựa trên dữ liệu đã được thu thập.
 
 ## 2. Cấu trúc repository
-.
 ├── .env                  # File cấu hình chứa API key 
 ├── Final Assignment.pdf  # Đề bài tập
 ├── app.py                # Mã nguồn để deploy question 2 trên streamlit
 ├── data.json             # Dữ liệu thu thập được scrawling và indexing từ trang web
 ├── requirements.txt      # Danh sách thư viện cần thiết
-└── source.ipynb          # Notebook và mã nguồn cho question 1 và 2        
+└── source.ipynb          # Notebook và mã nguồn cho question 1 và 2     
       
 ## 3. Hướng đẫn sử dụng
 ### 3.1 Cài đặt môi trường
-    - Cài đặt Python: Yêu cầu phiên bản Python >= 3.8.
-    - Cài đặt các thư viện cần thiết: pip install -r requirements.txt
-    - Cấu hình API thành biến môi trường
+- Cài đặt Python: Yêu cầu phiên bản Python >= 3.8.
+- Cài đặt các thư viện cần thiết: pip install -r requirements.txt
+- Cấu hình API thành biến môi trường
 ### 3.2 Chạy chương trình
 #### Question 1 và Question 2
-    - Mã nguồn của question 1 và 2 được lưu trên file source.ipynb
-    - Chạy các bài tập riêng lẻ
-    - Có thể xem chi tiết quá trình scrawling và indexing 
+- Mã nguồn của question 1 và 2 được lưu trên file source.ipynb
+- Chạy các bài tập riêng lẻ
+- Có thể xem chi tiết quá trình scrawling và indexing 
 #### Deploy chatbot ở question 2
-    - Chạy mã nguồn được lưu trong app.py bằng lệnh: streamlit run app.py
-    - Hoặc truy câp vào link trực tuyến đã tạo được tag trong source.ipynb
+- Chạy mã nguồn được lưu trong app.py bằng lệnh: streamlit run app.py
+- Hoặc truy câp vào link trực tuyến đã tạo được tag trong source.ipynb
