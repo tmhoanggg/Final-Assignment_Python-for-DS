@@ -25,11 +25,13 @@ class Chatbot():
         titles_embedding = self.encoder.encode(titles_embedding)
         query_embedding = self.encoder.encode([query])
         similarities = cosine_similarity(query_embedding, titles_embedding)
-        most_similar_index = np.argmax(similarities)
-        tostring = str(most_similar_index)
+        most_similar_index = str(np.argmax(similarities))
         genai.configure(api_key=self.__api_key)
 
-        response = self.model.generate_content(f"Answer this query{query}, base on the information {content[tostring]}")
+        response = self.model.generate_content(f"You are an expert in answering questions about privacy policy of a company.\
+                                                 If the query is just a greeting or small talk, just reply normally.\
+                                                 Else answer the query, base on the following information: {content[most_similar_index]}.\
+                                                 This is the query: {query}")
         return response
 def prepare_chatbot():
         encoder = SentenceTransformer('all-MiniLM-L6-v2')
