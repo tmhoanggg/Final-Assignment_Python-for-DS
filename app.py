@@ -9,7 +9,7 @@ import json
 
 class Chatbot():
     def __init__(self, encoder, model):
-        self.__api_key = os.getenv("API_KEY")
+        self.__api_key = 'AIzaSyCWy1MJ3EuSbBlxLSLKi-E2IxXFG3_LB1o'
         self.encoder = encoder
         self.model = model
 
