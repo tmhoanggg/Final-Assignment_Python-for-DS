@@ -21,7 +21,7 @@
 - **Mô tả nhiệm vụ**:
   - Thu thập dữ liệu từ trang web [https://www.presight.io/privacy-policy.html](https://www.presight.io/privacy-policy.html).
   - Xử lý và tổ chức dữ liệu thành một chỉ mục có thể tìm kiếm để hỗ trợ truy vấn thông tin.
-#### Chatbot Development (Điểm: 30%)
+#### Chatbot Development 
 - **Mô tả nhiệm vụ**:
   - Phát triển chatbot sử dụng xử lý ngôn ngữ tự nhiên (NLP) để trả lời các câu hỏi của người dùng dựa trên dữ liệu đã được thu thập.
 
@@ -32,7 +32,8 @@
 ├── app.py                # Mã nguồn để deploy question 2 trên streamlit
 ├── data.json             # Dữ liệu thu thập được scrawling và indexing từ trang web
 ├── requirements.txt      # Danh sách thư viện cần thiết
-└── source.ipynb          # Notebook và mà nguồn cho question 1 và 2            
+└── source.ipynb          # Notebook và mã nguồn cho question 1 và 2        
+      
 ## 3. Hướng đẫn sử dụng
 ### 3.1 Cài đặt môi trường
     - Cài đặt Python: Yêu cầu phiên bản Python >= 3.8.
