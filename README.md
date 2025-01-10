@@ -1,6 +1,15 @@
 # Final Assignment
 
+
 ## 1. Giới thiệu
+
+### Team members
+
+| Student Name    | Student ID |
+| -------- | ------- |
+|Trương Minh Hoàng|22280034|
+|Nguyễn Duy Huân|22280035|
+
 ### Question 1: Tích hợp LLM
 #### Single Text Translation
 - **Mô tả nhiệm vụ**: 
