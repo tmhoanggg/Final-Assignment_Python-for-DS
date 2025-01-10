@@ -5,11 +5,12 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import streamlit as st
 import json
+import os
 
 
 class Chatbot():
     def __init__(self, encoder, model):
-        self.__api_key = 'AIzaSyCWy1MJ3EuSbBlxLSLKi-E2IxXFG3_LB1o'
+        self.__api_key = os.getenv("API_KEY")
         self.encoder = encoder
         self.model = model
 
