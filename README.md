@@ -56,7 +56,7 @@
 - Có thể xem chi tiết quá trình scrawling và indexing 
 #### Deploy chatbot ở question 2
 - Chạy mã nguồn được lưu trong app.py bằng lệnh: streamlit run app.py
-- Hoặc truy cập vào link trực tuyến đã tạo và được tag trong source.ipynb
+- Hoặc truy cập vào link trực tuyến đã tạo và được tag trong 3.3 User Interface
 
 ### 3.3 User Interface
 Streamlit web app: https://presight-chatbot-byhoangvahuan.streamlit.app
