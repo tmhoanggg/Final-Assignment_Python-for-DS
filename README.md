@@ -36,7 +36,6 @@
 ## 2.   Chú thích các thư mục
 | Thư mục                | Mô tả                               |
 |-----------------------|-------------------------------------|
-| .env                  | File cấu hình chứa API key           |
 | Final Assignment.pdf  | Đề bài tập                          |
 | app.py                | Mã nguồn để deploy question 2 trên streamlit |
 | data.json             | Dữ liệu thu thập được scrawling và indexing từ trang web |
